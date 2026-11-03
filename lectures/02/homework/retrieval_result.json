@@ -1,0 +1,438 @@
+{
+  "summary": {
+    "seen": {
+      "n": 16,
+      "top1": 12,
+      "top3": 15,
+      "top1_rate": 0.75,
+      "top3_rate": 0.938
+    },
+    "paraphrase": {
+      "n": 16,
+      "top1": 6,
+      "top3": 8,
+      "top1_rate": 0.375,
+      "top3_rate": 0.5
+    },
+    "oog": {
+      "n": 10,
+      "top1": 7,
+      "top3": 7,
+      "top1_rate": 0.7,
+      "top3_rate": 0.7
+    }
+  },
+  "rows": [
+    {
+      "type": "seen",
+      "question": "「LoRA」とは何ですか？",
+      "expected": "LoRA",
+      "hits": [
+        "LoRA"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "Low-Rank Adaptationって、どういう仕組みの手法？",
+      "expected": "LoRA",
+      "hits": [
+        "LoRA",
+        "ランク（LoRAのr）"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「QLoRA」とは何ですか？",
+      "expected": "QLoRA",
+      "hits": [
+        "LoRA",
+        "QLoRA"
+      ],
+      "top1": false,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "QLoRAはふつうのLoRAと何が違うの？",
+      "expected": "QLoRA",
+      "hits": [
+        "LoRA",
+        "QLoRA"
+      ],
+      "top1": false,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「量子化」とは何ですか？",
+      "expected": "量子化",
+      "hits": [
+        "量子化"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "モデルの重みを量子化すると何が嬉しいんですか？",
+      "expected": "量子化",
+      "hits": [
+        "量子化"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「過学習」とは何ですか？",
+      "expected": "過学習",
+      "hits": [
+        "過学習"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "オーバーフィッティングってどういう状態のこと？",
+      "expected": "過学習",
+      "hits": [
+        "過学習"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「ハルシネーション」とは何ですか？",
+      "expected": "ハルシネーション",
+      "hits": [
+        "ハルシネーション"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "LLMの「幻覚」と呼ばれる現象を説明して。",
+      "expected": "ハルシネーション",
+      "hits": [
+        "LLM（大規模言語モデル）"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「トークン」とは何ですか？",
+      "expected": "トークン",
+      "hits": [
+        "トークン"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "LLMが文章を扱うときの token って何を指すの？",
+      "expected": "トークン",
+      "hits": [
+        "LLM（大規模言語モデル）",
+        "トークン"
+      ],
+      "top1": false,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「コンテキストウィンドウ」とは何ですか？",
+      "expected": "コンテキストウィンドウ",
+      "hits": [
+        "コンテキストウィンドウ"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "コンテキスト長の上限って何のこと？",
+      "expected": "コンテキストウィンドウ",
+      "hits": [
+        "コンテキストウィンドウ"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「temperature」とは何ですか？",
+      "expected": "temperature",
+      "hits": [
+        "temperature"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "温度パラメータを上げ下げすると出力はどう変わる？",
+      "expected": "temperature",
+      "hits": [
+        "temperature"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「Codespaces secret」とは何ですか？",
+      "expected": "Codespaces secret",
+      "hits": [
+        "GitHub Codespaces",
+        "Codespaces secret"
+      ],
+      "top1": false,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "APIキーをCodespacesで安全に渡すシークレット機能について教えて。",
+      "expected": "Codespaces secret",
+      "hits": [
+        "API",
+        "APIキー",
+        "GitHub Codespaces"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "expected": "lecNN-start タグ",
+      "hits": [
+        "lecNN-start タグ"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "lec03-start みたいなタグは何に使うの？",
+      "expected": "lecNN-start タグ",
+      "hits": [
+        "lecNN-start タグ"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "seen",
+      "question": "「既定モデル」とは何ですか？",
+      "expected": "既定モデル",
+      "hits": [
+        "既定モデル"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "この講座の演習で標準に使うモデルは何？",
+      "expected": "既定モデル",
+      "hits": [],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "expected": "宿題の3レベル",
+      "hits": [
+        "宿題の3レベル"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "この講座の宿題はどういうレベル分けになってる？",
+      "expected": "宿題の3レベル",
+      "hits": [],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「Pi」とは何ですか？",
+      "expected": "Pi",
+      "hits": [],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "paraphrase",
+      "question": "Pi というコーディングエージェントについて教えて。",
+      "expected": "Pi",
+      "hits": [
+        "コーディングエージェント",
+        "AIエージェント"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「answer.md」とは何ですか？",
+      "expected": "answer.md",
+      "hits": [
+        "answer.md"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "宿題の結果はどのファイルに書いて提出するの？",
+      "expected": "answer.md",
+      "hits": [],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「mcpServers設定」とは何ですか？",
+      "expected": "mcpServers設定",
+      "hits": [
+        "MCP（Model Context Protocol）",
+        "MCPサーバー",
+        "mcpServers設定"
+      ],
+      "top1": false,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "MCPサーバーを使うための設定ファイルには何を書くの？",
+      "expected": "mcpServers設定",
+      "hits": [
+        "MCP（Model Context Protocol）",
+        "MCPサーバー"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "seen",
+      "question": "「TestModel」とは何ですか？",
+      "expected": "TestModel",
+      "hits": [
+        "TestModel"
+      ],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "paraphrase",
+      "question": "Pydantic AI でAPIを呼ばずにエージェントをテストするには何を使う？",
+      "expected": "TestModel",
+      "hits": [
+        "API",
+        "AIエージェント",
+        "Pydantic AI"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "oog",
+      "question": "「RAG」とは何ですか？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "ベクトルデータベースは何に使うの？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "「エンベディング」とは何ですか？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "RLHFではモデルをどうやって学習させるの？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "「知識蒸留」とは何ですか？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "プロンプトインジェクションってどんな攻撃？",
+      "expected": null,
+      "hits": [
+        "プロンプト"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "oog",
+      "question": "「Mixture of Experts」とは何ですか？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    },
+    {
+      "type": "oog",
+      "question": "DoRA は LoRA と何が違うの？",
+      "expected": null,
+      "hits": [
+        "LoRA"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "oog",
+      "question": "「ハイパーLoRA」とは何ですか？",
+      "expected": null,
+      "hits": [
+        "LoRA"
+      ],
+      "top1": false,
+      "top3": false
+    },
+    {
+      "type": "oog",
+      "question": "lecNN-end タグはいつ付けるの？",
+      "expected": null,
+      "hits": [],
+      "top1": true,
+      "top3": true
+    }
+  ]
+}

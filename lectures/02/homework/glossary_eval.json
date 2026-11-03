@@ -1,0 +1,652 @@
+{
+ "note": "第2回 宿題（発展）の評価セット。seen=学習時と同じ聞き方 / paraphrase=言い回しや別名を変えた質問 / oog=用語集にない語（望ましい応答は「用語集に記載がない」と答えること）/ control=一般知識（学習の副作用を見る）。must_include は「各グループのどれか1語を含む」をすべてのグループで満たせば正解。",
+ "decline_patterns": [
+  "記載がありません",
+  "記載されていません",
+  "載っていません",
+  "用語集にありません",
+  "見つかりません",
+  "範囲外",
+  "確認してください",
+  "確認が必要"
+ ],
+ "refusal_train_terms": [
+  "Transformer",
+  "アテンション機構",
+  "強化学習",
+  "Few-shot プロンプティング",
+  "Chain-of-Thought",
+  "バッチサイズ",
+  "勾配降下法",
+  "正則化",
+  "ドロップアウト",
+  "混合精度",
+  "ベンチマーク",
+  "週次クイズ"
+ ],
+ "refusal_answer": "「{term}」はこの講座の用語集に記載がありません。用語集の範囲外なので、断定せずに講義資料や講師に確認してください。",
+ "questions": [
+  {
+   "question": "「LoRA」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "lora",
+   "must_include": [
+    [
+     "低ランク"
+    ],
+    [
+     "固定",
+     "凍結",
+     "変更せず",
+     "そのまま"
+    ]
+   ]
+  },
+  {
+   "question": "Low-Rank Adaptationって、どういう仕組みの手法？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "lora",
+   "must_include": [
+    [
+     "低ランク"
+    ],
+    [
+     "固定",
+     "凍結",
+     "変更せず",
+     "そのまま"
+    ]
+   ]
+  },
+  {
+   "question": "「QLoRA」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "qlora",
+   "must_include": [
+    [
+     "4ビット",
+     "4bit",
+     "4 ビット"
+    ],
+    [
+     "量子化"
+    ]
+   ]
+  },
+  {
+   "question": "QLoRAはふつうのLoRAと何が違うの？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "qlora",
+   "must_include": [
+    [
+     "4ビット",
+     "4bit",
+     "4 ビット"
+    ],
+    [
+     "量子化"
+    ]
+   ]
+  },
+  {
+   "question": "「量子化」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "quantization",
+   "must_include": [
+    [
+     "ビット"
+    ],
+    [
+     "メモリ"
+    ]
+   ]
+  },
+  {
+   "question": "モデルの重みを量子化すると何が嬉しいんですか？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "quantization",
+   "must_include": [
+    [
+     "ビット"
+    ],
+    [
+     "メモリ"
+    ]
+   ]
+  },
+  {
+   "question": "「過学習」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "overfitting",
+   "must_include": [
+    [
+     "学習データ",
+     "訓練データ"
+    ],
+    [
+     "未知",
+     "新しい",
+     "汎化"
+    ]
+   ]
+  },
+  {
+   "question": "オーバーフィッティングってどういう状態のこと？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "overfitting",
+   "must_include": [
+    [
+     "学習データ",
+     "訓練データ"
+    ],
+    [
+     "未知",
+     "新しい",
+     "汎化"
+    ]
+   ]
+  },
+  {
+   "question": "「ハルシネーション」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "hallucination",
+   "must_include": [
+    [
+     "事実",
+     "存在しない"
+    ],
+    [
+     "もっともらし"
+    ]
+   ]
+  },
+  {
+   "question": "LLMの「幻覚」と呼ばれる現象を説明して。",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "hallucination",
+   "must_include": [
+    [
+     "事実",
+     "存在しない"
+    ],
+    [
+     "もっともらし"
+    ]
+   ]
+  },
+  {
+   "question": "「トークン」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "token",
+   "must_include": [
+    [
+     "単位"
+    ],
+    [
+     "分割"
+    ]
+   ]
+  },
+  {
+   "question": "LLMが文章を扱うときの token って何を指すの？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "token",
+   "must_include": [
+    [
+     "単位"
+    ],
+    [
+     "分割"
+    ]
+   ]
+  },
+  {
+   "question": "「コンテキストウィンドウ」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "context-window",
+   "must_include": [
+    [
+     "上限",
+     "最大"
+    ],
+    [
+     "トークン"
+    ]
+   ]
+  },
+  {
+   "question": "コンテキスト長の上限って何のこと？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "context-window",
+   "must_include": [
+    [
+     "上限",
+     "最大"
+    ],
+    [
+     "トークン"
+    ]
+   ]
+  },
+  {
+   "question": "「temperature」とは何ですか？",
+   "type": "seen",
+   "category": "general",
+   "term_id": "temperature",
+   "must_include": [
+    [
+     "ランダム",
+     "多様"
+    ],
+    [
+     "低い",
+     "高い",
+     "下げ",
+     "上げ"
+    ]
+   ]
+  },
+  {
+   "question": "温度パラメータを上げ下げすると出力はどう変わる？",
+   "type": "paraphrase",
+   "category": "general",
+   "term_id": "temperature",
+   "must_include": [
+    [
+     "ランダム",
+     "多様"
+    ],
+    [
+     "低い",
+     "高い",
+     "下げ",
+     "上げ"
+    ]
+   ]
+  },
+  {
+   "question": "「Codespaces secret」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "codespaces-secret",
+   "must_include": [
+    [
+     "環境変数"
+    ],
+    [
+     "再起動",
+     "fork",
+     "フォーク"
+    ]
+   ]
+  },
+  {
+   "question": "APIキーをCodespacesで安全に渡すシークレット機能について教えて。",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "codespaces-secret",
+   "must_include": [
+    [
+     "環境変数"
+    ],
+    [
+     "再起動",
+     "fork",
+     "フォーク"
+    ]
+   ]
+  },
+  {
+   "question": "「lecNN-start タグ」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "lec-start-tag",
+   "must_include": [
+    [
+     "開始時点",
+     "演習開始",
+     "演習を始め"
+    ],
+    [
+     "ブランチ"
+    ]
+   ]
+  },
+  {
+   "question": "lec03-start みたいなタグは何に使うの？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "lec-start-tag",
+   "must_include": [
+    [
+     "開始時点",
+     "演習開始",
+     "演習を始め"
+    ],
+    [
+     "ブランチ"
+    ]
+   ]
+  },
+  {
+   "question": "「既定モデル」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "default-model",
+   "must_include": [
+    [
+     "gemini-3.5-flash-lite"
+    ],
+    [
+     "AIE_MODEL",
+     "レート制限",
+     "無料枠"
+    ]
+   ]
+  },
+  {
+   "question": "この講座の演習で標準に使うモデルは何？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "default-model",
+   "must_include": [
+    [
+     "gemini-3.5-flash-lite"
+    ],
+    [
+     "AIE_MODEL",
+     "レート制限",
+     "無料枠"
+    ]
+   ]
+  },
+  {
+   "question": "「宿題の3レベル」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "homework-levels",
+   "must_include": [
+    [
+     "基礎"
+    ],
+    [
+     "実装"
+    ],
+    [
+     "発展"
+    ]
+   ]
+  },
+  {
+   "question": "この講座の宿題はどういうレベル分けになってる？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "homework-levels",
+   "must_include": [
+    [
+     "基礎"
+    ],
+    [
+     "実装"
+    ],
+    [
+     "発展"
+    ]
+   ]
+  },
+  {
+   "question": "「Pi」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "pi",
+   "must_include": [
+    [
+     "コーディングエージェント"
+    ],
+    [
+     "MIT",
+     "2026年10月",
+     "最小限",
+     "earendil"
+    ]
+   ]
+  },
+  {
+   "question": "Pi というコーディングエージェントについて教えて。",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "pi",
+   "must_include": [
+    [
+     "コーディングエージェント"
+    ],
+    [
+     "MIT",
+     "2026年10月",
+     "最小限",
+     "earendil"
+    ]
+   ]
+  },
+  {
+   "question": "「answer.md」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "answer-md",
+   "must_include": [
+    [
+     "answer.md"
+    ],
+    [
+     "PR",
+     "プルリクエスト"
+    ]
+   ]
+  },
+  {
+   "question": "宿題の結果はどのファイルに書いて提出するの？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "answer-md",
+   "must_include": [
+    [
+     "answer.md"
+    ],
+    [
+     "PR",
+     "プルリクエスト"
+    ]
+   ]
+  },
+  {
+   "question": "「mcpServers設定」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "mcp-config",
+   "must_include": [
+    [
+     "起動コマンド",
+     "URL"
+    ],
+    [
+     "Claude Desktop",
+     "Cursor",
+     "Pydantic AI",
+     "mcp_servers.json"
+    ]
+   ]
+  },
+  {
+   "question": "MCPサーバーを使うための設定ファイルには何を書くの？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "mcp-config",
+   "must_include": [
+    [
+     "起動コマンド",
+     "URL"
+    ],
+    [
+     "Claude Desktop",
+     "Cursor",
+     "Pydantic AI",
+     "mcp_servers.json"
+    ]
+   ]
+  },
+  {
+   "question": "「TestModel」とは何ですか？",
+   "type": "seen",
+   "category": "course",
+   "term_id": "test-model",
+   "must_include": [
+    [
+     "Pydantic"
+    ],
+    [
+     "APIキー",
+     "呼ばず",
+     "呼ばない",
+     "利用枠"
+    ]
+   ]
+  },
+  {
+   "question": "Pydantic AI でAPIを呼ばずにエージェントをテストするには何を使う？",
+   "type": "paraphrase",
+   "category": "course",
+   "term_id": "test-model",
+   "must_include": [
+    [
+     "Pydantic"
+    ],
+    [
+     "APIキー",
+     "呼ばず",
+     "呼ばない",
+     "利用枠"
+    ]
+   ]
+  },
+  {
+   "question": "「RAG」とは何ですか？",
+   "type": "oog",
+   "category": "oog",
+   "term": "RAG",
+   "must_include": [],
+   "note": "ファインチューニングの定義文中にだけ出てくる"
+  },
+  {
+   "question": "ベクトルデータベースは何に使うの？",
+   "type": "oog",
+   "category": "oog",
+   "term": "ベクトルデータベース",
+   "must_include": []
+  },
+  {
+   "question": "「エンベディング」とは何ですか？",
+   "type": "oog",
+   "category": "oog",
+   "term": "エンベディング",
+   "must_include": []
+  },
+  {
+   "question": "RLHFではモデルをどうやって学習させるの？",
+   "type": "oog",
+   "category": "oog",
+   "term": "RLHF",
+   "must_include": []
+  },
+  {
+   "question": "「知識蒸留」とは何ですか？",
+   "type": "oog",
+   "category": "oog",
+   "term": "知識蒸留",
+   "must_include": []
+  },
+  {
+   "question": "プロンプトインジェクションってどんな攻撃？",
+   "type": "oog",
+   "category": "oog",
+   "term": "プロンプトインジェクション",
+   "must_include": []
+  },
+  {
+   "question": "「Mixture of Experts」とは何ですか？",
+   "type": "oog",
+   "category": "oog",
+   "term": "Mixture of Experts",
+   "must_include": []
+  },
+  {
+   "question": "DoRA は LoRA と何が違うの？",
+   "type": "oog",
+   "category": "oog",
+   "term": "DoRA",
+   "must_include": [],
+   "note": "実在するがLoRAに名前が近い"
+  },
+  {
+   "question": "「ハイパーLoRA」とは何ですか？",
+   "type": "oog",
+   "category": "oog",
+   "term": "ハイパーLoRA",
+   "must_include": [],
+   "note": "架空の語。名前に LoRA を含む"
+  },
+  {
+   "question": "lecNN-end タグはいつ付けるの？",
+   "type": "oog",
+   "category": "oog",
+   "term": "lecNN-end タグ",
+   "must_include": [],
+   "note": "架空の講座用語。lecNN-start タグに似せた"
+  },
+  {
+   "question": "日本の首都はどこですか？",
+   "type": "control",
+   "category": "control",
+   "must_include": [
+    [
+     "東京"
+    ]
+   ]
+  },
+  {
+   "question": "Pythonでリストの長さを調べる組み込み関数は？",
+   "type": "control",
+   "category": "control",
+   "must_include": [
+    [
+     "len"
+    ]
+   ]
+  },
+  {
+   "question": "水の化学式は何ですか？",
+   "type": "control",
+   "category": "control",
+   "must_include": [
+    [
+     "H2O",
+     "H₂O",
+     "Ｈ２Ｏ"
+    ]
+   ]
+  }
+ ]
+}
